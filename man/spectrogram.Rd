@@ -54,7 +54,6 @@ spectrogram(path, time.res = 1/1000, freq.res = 100)
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-  \code{\link{readWave}}
   \code{\link{hamming}}
   \code{\link{get.freq.res}}
   \code{\link{get.time.res}}

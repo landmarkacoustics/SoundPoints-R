@@ -97,7 +97,7 @@ soundpoints(file.name, time.res, freq.res, passband, amplitude.cutoff, loudness.
   \code{\link{make.peaks}}
   \code{\link{smooth.average}}
   \code{\link{plot.spg}}
-  \code{\link{plot.landmarks}}
+  \code{\link{landmark.plot}}
 }
 \examples{
 ##---- Should be DIRECTLY executable !! ----

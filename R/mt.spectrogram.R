@@ -1,11 +1,11 @@
 mt.spectrogram <-
 function(path, time.res = 1/1000, freq.res = 100){
 
-    require(sound);
+    require(tuneR);
 
     require(multitaper);
 
-    wav <- loadSample(path);
+    wav <- readWave(path);
 
     sample.rate <- wav$rate;
 

@@ -1,3 +1,4 @@
+import(tuneR, multitaper)
 export(arsmooth,
        cepstrum,
        collect.absolute.energy,
@@ -9,6 +10,7 @@ export(arsmooth,
        hamming,
        landmark.plot,
        make.peaks,
+       mt.spectrogram,
        plot.cepstrum,
        plot.spg,
        sample.rate.spg,

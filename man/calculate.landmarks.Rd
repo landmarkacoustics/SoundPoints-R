@@ -40,7 +40,7 @@ calculate.landmarks(peaks, evs.and.lmrks)
 
 \seealso{
   \code{\link{make.peaks}}
-  \code{\link{assign.landmarks}}
+  \code{\link{assign.to.landmarks}}
   \code{\link{detect.events}}
   %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
