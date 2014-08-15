@@ -9,7 +9,7 @@
   spectrogram. the colors represent amplitude.
 }
 \usage{
-plot.spg(x, pixel.colors = gray.colors(16, 1, 0), ...)
+\method{plot}{spg}(x, pixel.colors = gray.colors(16, 1, 0), ...)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

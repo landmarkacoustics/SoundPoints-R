@@ -8,7 +8,14 @@
   this version is faster because it only returns the landmark data frame, not the peaks or the spectrogram. it also makes some stupid assumptions about the sample rate of the sound, don't use it if it's not 44.1 kHz.
 }
 \usage{
-fast.soundpoints(file.name, passband, amplitude.cutoff, loudness.column, half.life, var.columns, var.weights, n.landmarks)
+fast.soundpoints(file.name,
+ passband,
+ amplitude.cutoff,
+ loudness.column,
+ half.life,
+ var.columns,
+ var.weights,
+ n.landmarks)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

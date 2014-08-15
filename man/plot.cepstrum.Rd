@@ -9,7 +9,7 @@ i'm still working with how to scale the amplitude values so that the
 image is meaningful.
 }
 \usage{
-plot.cepstrum(x, pixel.colors = gray.colors(16, 1, 0), ...)
+\method{plot}{cepstrum}(x, pixel.colors = gray.colors(16, 1, 0), ...)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

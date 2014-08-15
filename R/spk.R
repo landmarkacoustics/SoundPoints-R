@@ -5,5 +5,5 @@ function(x){
 
     s <- fft(x);
 
-    Re(Conj(s) * s)[1:n];
+    10 * log(Re(Conj(s) * s)[n + n:1] / length(x),10);
 }
