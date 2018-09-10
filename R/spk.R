@@ -1,9 +1,11 @@
 spk <-
 function(x){
 
-    n <- floor(length(x)/2);
+    n <- length(x);
 
-    s <- fft(x);
+    k <- floor(0.5 * n);
 
-    10 * log(Re(Conj(s) * s)[n + n:1] / length(x),10);
+    y <- Mod(fft(x)[1:k+1])
+    
+    10 * ( 2 * log( y, 10) - log(n,10) );
 }

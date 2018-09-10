@@ -17,7 +17,7 @@ function(path, time.res = 1/1000, freq.res = 100){
 
     N <- 1 + floor(t.max / S);
 
-    spg <- matrix(NA, N, W);
+    spg <- matrix(NA, N, W+1);
 
     envelope <- matrix(NA, N, 2);
 
@@ -42,7 +42,7 @@ function(path, time.res = 1/1000, freq.res = 100){
         spg[i,] <- spk(win);
     }
 
-    attributes(spg) <- c(attributes(spg), list(time = 0:(N-1) * S / sample.rate, frequency = sample.rate * 0:(W-1) / (2 * W), RMS = rms, envelope = envelope));
+    attributes(spg) <- c(attributes(spg), list(time = 0:(N-1) * S / sample.rate, frequency = sample.rate * 0:W / (2 * W), RMS = rms, envelope = envelope));
 
     class(spg) <- c("spg", class(spg));
 

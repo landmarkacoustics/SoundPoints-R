@@ -8,8 +8,8 @@ function(X, var.weights){
 
     for(i in 2:nrow(X)){
         events[i] <- events[i-1];
-        delta <- sum((X[i,] - X[i-1,])^2)
-        if(delta>1)
+        delta <- sum((X[i,] - X[i-1,])^2, na.rm=TRUE)
+        if(delta>1 || !is.finite(delta))
             events[i] <- events[i]+1;
     }
     return(invisible(events));

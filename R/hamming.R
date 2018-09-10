@@ -1,5 +1,8 @@
-hamming <-
-function(N)
-{
-    0.53836 - 0.46164 * cos(2 * pi * 0:(N - 1) / (N - 1) );
+hamming <- function(N,k=21,K=46){
+
+    N <- N-1;
+
+    k <- k/K;
+    
+    (1.0 - k) - k * cos((2.0*pi/N)* 0:N);
 }

@@ -7,16 +7,14 @@ function(spg){
 
         NR <- nrow(spg);
 
-        NC <- ncol(spg) / 2;
+        NC <- ncol(spg);
         
-        ix <- NC + NC:1;
-
-        cpg <- matrix(NA, NR, length(ix));
+        cpg <- matrix(complex(1), NR, 2 * NC);
 
 #        H <- hamming(ncol(spg));
         
         for(i in 1:NR){
-            cpg[i,] <- spk( scale(spg[i,], T, 10) ); # scale of 10 bc of decibels in spk()
+            cpg[i,] <- fft( c(spg[i,], rev(spg[i,])), T ); # scale of 10 bc of decibels in spk()
         }
 
         attributes(cpg) <- c(attributes(cpg), list(time = attr(spg, "time"), frequency = 1:NC / sample.rate));
